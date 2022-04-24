@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useProductsActions } from "../../providers/ProductProvider";
-
+import styles from './Search.module.css';
 const Search = ({color}) => {
     
     const[value,setValue] = useState("");
@@ -13,8 +13,10 @@ const Search = ({color}) => {
     return ( 
         <div>
             <input
+            className={styles.input}
              type="text"
              onChange={searchHandler}
+             placeholder = "جست و جو کنید ... "
               />
         </div>
      );

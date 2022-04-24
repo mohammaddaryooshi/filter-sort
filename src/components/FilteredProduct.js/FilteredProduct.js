@@ -15,7 +15,9 @@ const FilteredProduct = () => {
             price={product.price}
             title={product.title}
             image={product.image}
+            colorcode = {product.colorcode}
              /> 
+             
            </Col>  
            })}
         </Row>

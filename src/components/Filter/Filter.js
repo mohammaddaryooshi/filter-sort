@@ -50,14 +50,14 @@ const Filter = () => {
                     onChange={colorHandler}
                     options={colorOptions}
                     className='text-regular'
-                    placeholder='انتخاب کنید'
+                    placeholder='بر اساس رنگ'
                 />
                 <Select
                     defaultValue={price}
                     onChange={priceHandler}
                     options={priceOptions}
                     className='text-regular'
-                    placeholder='انتخاب کنید'
+                    placeholder='بر اساس قیمت'
                 />
                 </Col>
             </Row>
