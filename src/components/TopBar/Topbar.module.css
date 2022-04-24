@@ -1,0 +1,26 @@
+.topbar{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 5rem;
+    width: 100%;
+    background-color:#fff;
+    border-radius: .7rem;
+}
+
+.topbarul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-right: 1.5rem;
+}
+
+.topbarli{
+cursor: pointer;
+}
+
+.textblue{
+    color: var(--blueColor);
+}

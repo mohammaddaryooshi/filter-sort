@@ -1,0 +1,203 @@
+@import url('./fonts.css');
+html{
+  font-size: 62.5% !important;
+  padding: 0;
+  margin: 0;
+  direction: rtl;
+	background-color: #f4f5f9 !important;
+	text-align: right;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  direction: rtl;
+	background-color: #f4f5f9 !important;
+	text-align: right;
+}
+
+a {
+ 
+  text-decoration: none;
+}
+
+label,a,button{
+  cursor: pointer !important;
+}
+
+ul , li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+}
+
+p {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box !important;
+  font-size: 1.6rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: iranyekan !important;
+  margin: 0 !important;
+}
+
+h1 {
+	font-weight: bold;
+  font-size: 3.2rem !important;
+}
+
+h2{
+  font-size: 2.4rem !important;
+}
+h3{
+  font-size: 1.872rem !important;
+}
+h4{
+  font-size: 1.6rem !important;
+}
+h5{
+  font-size: 1.328rem !important;
+}
+h6{
+  font-size: 1.072rem !important;
+}
+
+.ltr {
+	direction: ltr;
+}
+.text-right {
+	text-align: right;
+}
+.text-center {
+	text-align: center;
+}
+.text-left {
+	text-align: left;
+}
+
+
+.text-thin {
+  font-family: iranyekan;
+	font-weight: 100;
+}
+.text-light {
+  font-family: iranyekan;
+	font-weight: 300;
+}
+.text-regular {
+  font-family: iranyekan;
+	font-weight: normal;
+}
+.text-medium {
+  font-family: iranyekan;
+	font-weight: 500;
+}
+.text-bold {
+  font-family: iranyekan;
+	font-weight: bold;
+}
+.text-extrabold {
+  font-family: iranyekan;
+	font-weight: 800;
+}
+.text-black {
+  font-family: iranyekan;
+	font-weight: 850;
+}
+.text-extrablack {
+  font-family: iranyekan;
+	font-weight: 900;
+  
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  clear: both;
+  padding: 0 15px;
+} 
+
+.container-fluid {
+  width: 100%;
+}
+
+.row::after {
+  content: '';
+  clear: both;
+  display: table;
+  
+}
+
+.shadow-box{
+  -webkit-box-shadow: 0 0 10px 0 rgba(0,0,0,.1)!important;
+   box-shadow: 0 0 10px 0 rgba(0,0,0,.1)!important;
+}
+
+:root{
+  --redColor:#e6123d;
+  --grayColor:#f0f0f1;
+  --grayText:#444444;
+  --blueColor:#17a2b8;
+  --greenColor:#28a745;
+}
+
+.btn-red{
+  background-color: var(--redColor);
+  color: var(--grayColor);
+  cursor: pointer;
+  transition: .7s ease-in;
+  border: 2px solid var(--redColor);
+}
+
+.btn-red:hover{
+  background-color: #c50021;
+}
+
+.btn-red-outline{
+  background-color: var(--grayColor);
+  border: 2px solid var(--redColor);
+  color: var(--redColor);
+  cursor: pointer;
+  text-align: center;
+}
+
+/* hover lib */
+/* Underline From Center */
+.hvr-underline-from-center {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
+ 
+}
+.hvr-underline-from-center:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 51%;
+  right: 51%;
+  bottom: 0;
+  
+  background: var(--redColor);
+  height: 3px;
+  -webkit-transition-property: left, right;
+  transition-property: left, right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+  
+}
+.hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before {
+  left: 0;
+  right: 0;
+}
+

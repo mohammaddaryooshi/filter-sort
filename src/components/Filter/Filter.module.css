@@ -1,0 +1,11 @@
+.filtercol{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1.5rem;
+}
+
+.filterbtn{
+    font-size: 1.4rem;
+    margin-left: 1rem;
+}
