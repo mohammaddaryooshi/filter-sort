@@ -24,11 +24,11 @@ const reducer = (state,action)=>{
       const products = [...state];
       if(action.selectedOption.value === "lowest"){
        
-       return _.orderBy(products,["price"],["asc"]);
+       return _.orderBy(products,item =>parseFloat(item.price),["asc"]);
       
       }else{
        
-       return  _.orderBy(products,["price"],["desc"]);
+       return  _.orderBy(products,item =>parseFloat(item.price),["desc"]);
      
        
       }
